@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+
+    {% block scripts %}{% endblock %}
+
+    <title>{% block title %}Benjamin Kruger{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">
+            <a href="/">Benjamin Kruger</a>
+        </h1>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
