@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/main.css">
 
-    {% block scripts %}{% endblock %}
+    {% block scripts %}
+    <script async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    {% endblock %}
 
     <title>{% block title %}Benjamin Kruger{% endblock %}</title>
 </head>

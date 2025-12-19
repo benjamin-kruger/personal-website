@@ -8,18 +8,18 @@
 }
 
 :root {
-    --color-text: #d2d2d2;
-    --color-text-muted: #7f7f7f;
-    --color-background: #181818;
-    --color-separator: #333333;
-    --color-accent: #d65d0e;
-    --color-accent-muted: #a64a0a;
-    --color-blockquote-border: #d65d0e;
-    --color-code-bg: #222222;
-    --color-code-border: #333333;
+    color-scheme: light dark;
+    --color-text: light-dark(#010101, #d2d2d2);
+    --color-text-muted: light-dark(#5c6166, #7f7f7f);
+    --color-background: light-dark(#fcfcfc, #181818);
+    --color-separator: light-dark(#d4d4d4, #333333);
+    --color-accent: light-dark(#d65d0e, #d65d0e);
+    --color-accent-muted: light-dark(#a64a0a, #a64a0a);
+    --color-blockquote-border: light-dark(#d65d0e, #d65d0e);
+    --color-code-bg: light-dark(#f5f5f5, #222222);
+    --color-code-border: light-dark(#e0e0e0, #333333);
     --line-height: 1.7rem;
 }
-
 /* typography */
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -37,7 +37,6 @@ body {
 }
 
 /* headers & structure */
-
 header {
     margin-bottom: 3rem;
 }
@@ -61,7 +60,6 @@ header {
 }
 
 /* headings */
-
 h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     font-weight: 600;
@@ -82,7 +80,6 @@ h3:first-child {
 }
 
 /* article specific headers */
-
 article h1 {
     font-size: 2.5rem;
     font-weight: 400;
@@ -106,7 +103,6 @@ article h2 {
 }
 
 /* paragraphs & text */
-
 p {
     margin: 1.4rem 0;
     hyphens: auto;
@@ -121,7 +117,6 @@ sup, sub {
 }
 
 /* lists */
-
 ul, ol {
     padding-left: 1.5rem;
     margin-bottom: var(--line-height);
@@ -145,7 +140,6 @@ dd {
 }
 
 /* links */
-
 a {
     color: var(--color-text);
     text-decoration: underline;
@@ -157,7 +151,6 @@ a:hover {
 }
 
 /* article list (home page) */
-
 .article-list {
     padding: 0;
     list-style: none;
