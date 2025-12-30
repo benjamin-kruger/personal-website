@@ -126,7 +126,7 @@ a {
 
 /* Code */
 code {
-    font-family: "JetBrains Mono", "IBM Plex Mono", ui-monospace, monospace;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
     font-size: 0.9em;
 }
 

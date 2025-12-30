@@ -1,0 +1,41 @@
+/* EB Garamond */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/EBGaramond-Regular.woff2') format('woff2'),
+         url('/fonts/EBGaramond-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/EBGaramond-Bold.woff2') format('woff2'),
+         url('/fonts/EBGaramond-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/fonts/EBGaramond-Italic.woff2') format('woff2'),
+         url('/fonts/EBGaramond-Italic.woff') format('woff');
+}
+
+/* JetBrains Mono */
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('/fonts/JetBrainsMono-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+         url('/fonts/JetBrainsMono-Bold.woff') format('woff');
+}
