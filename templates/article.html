@@ -1,12 +1,32 @@
 {% extends "base.html" %}
 
-{% block title %}{{ meta.title }}{% endblock %}
+{% block title %}{{ page.title }} - Benjamin Kruger{% endblock title %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="/katex/katex.min.css">
+{% endblock extra_head %}
 
 {% block content %}
 <article>
-    <h1>{{ meta.title }}</h1>
-    <span class="article-date">{{ meta.date }}</span>
+    <h1>{{ page.title }}</h1>
+    <span class="article-date">{{ page.date | date(format="%d %b, %Y") }}</span>
 
-    {% block article_content %}{% endblock %}
+    {{ page.content | safe }}
 </article>
-{% endblock %}
+{% endblock content %}
+
+{% block extra_js %}
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/contrib/auto-render.min.js" onload="renderMath()"></script>
+<script>
+    function renderMath() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });
+    }
+</script>
+{% endblock extra_js %}

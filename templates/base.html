@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/main.css">
-
-    {% block scripts %}
-    <script async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-    {% endblock %}
-
-    <title>{% block title %}Benjamin Kruger{% endblock %}</title>
+    <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    {% block extra_head %}{% endblock extra_head %}
+    <title>{% block title %}Benjamin Kruger{% endblock title %}</title>
 </head>
 <body>
     <header>
         <h1 class="site-title">
-            <a href="/">Benjamin Kruger</a>
+            <a href="{{ get_url(path='/') }}">Benjamin Kruger</a>
         </h1>
     </header>
-
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}{% endblock content %}
     </main>
+    {% block extra_js %}{% endblock extra_js %}
 </body>
 </html>

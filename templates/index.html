@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    {{ section.content | safe }}
+</div>
+
+<hr>
+
+<h2>Mathematical Writing</h2>
+<ul>
+    <li>
+        <a href="/prescribed_cross_curvature.pdf">The prescribed Cross Curvature problem</a>
+    </li>
+    <li>
+        <a href="/intro_to_supergeometry.pdf">An introduction to supergeometry</a>
+    </li>
+    <li>
+        <a href="/honours_thesis.pdf">The Ricci flow on homogeneous supermanifolds</a>
+    </li>
+    <li>
+        <a href="/geometric_invariant_theory.pdf">Geometric invariant theory</a>
+    </li>
+</ul>
+
+<hr>
+
+<h2>Blog Posts</h2>
+<ul class="article-list">
+    {% set blog_section = get_section(path="blog/_index.md") %}
+    {% for page in blog_section.pages %}
+    <li>
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+        <span class="date">{{ page.date | date(format="%d %b, %Y") }}</span>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
