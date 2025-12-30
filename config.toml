@@ -1,4 +1,4 @@
-base_url = "https://benjamin-kruger.com"
+base_url = "http://localhost:3000"
 compile_sass = false
 build_search_index = false
 
