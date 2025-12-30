@@ -3,7 +3,9 @@
 {% block title %}{{ page.title }} - Benjamin Kruger{% endblock title %}
 
 {% block extra_head %}
+{% if page.extra.math %}
 <link rel="stylesheet" href="/katex/katex.min.css">
+{% endif %}
 {% endblock extra_head %}
 
 {% block content %}
@@ -20,7 +22,7 @@
 <script defer src="/katex/contrib/auto-render.min.js" onload="renderMath()"></script>
 <script>
     function renderMath() {
-        renderMathInElement(document.body, {
+        renderMathInElement(document.querySelector("article"), {
             delimiters: [
                 {left: '$$', right: '$$', display: true},
                 {left: '$', right: '$', display: false}
