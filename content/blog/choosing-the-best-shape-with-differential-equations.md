@@ -1,7 +1,6 @@
 +++
 title = "Choosing the best shape with differential equations"
 date = 2024-08-11
-math = true
 +++
 
 Recently, I have felt the urge to brush up on some of the mathematics I used to surround myself with. This post is an attempt to scratch that itch and explore interesting problems in differential geometry.
